@@ -1,0 +1,38 @@
+GeneSetViz: Interactive Visualization of Differentially Expressed Genes
+Overview
+GeneSetViz is an interactive Shiny web application designed to help researchers visualize and compare differentially expressed genes across multiple datasets. The app allows users to upload gene lists and generates either Venn Diagrams (for up to 5 datasets) or UpSet plots (for more than 5 datasets) to explore gene overlaps.
+
+Features
+Interactive Visualizations: Visualize gene overlaps with Venn Diagrams (for 2-5 datasets) and UpSet plots (for more than 5 datasets).
+Upload Gene Files: Users can upload their gene expression data in .txt format.
+Downloadable Plots: Once the plot is generated, users can download it in JPG format for further analysis or presentation.
+Multiple Dataset Handling: The app handles multiple gene lists for up to 10 datasets, making it ideal for comparing gene expression across different conditions or experiments.
+Requirements
+R (version 4.0 or higher)
+Required R packages: shiny, UpSetR, dplyr, tidyr, VennDiagram, gridExtra
+How to Use
+Start the Application: Open the app in your R environment by running the following command:
+
+r
+Copy
+Edit
+shiny::runApp("path/to/your/app")
+Upload Gene Files:
+
+On the left sidebar, use the "Choose Gene Files" button to upload your gene expression data files in .txt format.
+Files should contain at least a "Gene.ID" column with gene identifiers.
+Generate Plot:
+
+Click on the "Generate Plot" button to generate either a Venn Diagram or an UpSet plot based on the number of uploaded datasets.
+If there are 2-5 datasets, a Venn Diagram will be displayed.
+If there are more than 5 datasets, an UpSet plot will be generated.
+Download Plot:
+
+After the plot is generated, you can download the image by clicking on the "Download Plot" button. The plot will be saved as a .jpg file.
+Troubleshooting
+Ensure that the uploaded files contain a "Gene.ID" column.
+If the app fails to generate the plot, check if the dataset contains sufficient data.
+For more than 5 datasets, the app will automatically switch to an UpSet plot.
+License
+This app is open-source and can be used for academic and non-commercial purposes. You are free to modify and distribute the app under the terms of the MIT license.
+
