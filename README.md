@@ -1,4 +1,4 @@
-##GeneSetViz: Interactive Visualization of Differentially Expressed Genes with Venn Diagrams and UpSet Plots##
+**##GeneSetViz: Interactive Visualization of Differentially Expressed Genes with Venn Diagrams and UpSet Plots##**
 
 ### Shiny package to get the Venn Diagram from a list of files (Differentially expressed genes between different conditions/samples)
 
